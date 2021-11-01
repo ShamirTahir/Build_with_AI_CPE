@@ -6,25 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Prediction Engine</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="validate.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+   
   </head>
   <body>
       <nav>
-          <label class="logo">Course Prediction Engine</label>
+          <label class="logo">Phoenix</label>
           <ul>
               <li><a class="active" href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Follow us</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Study Group</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Sign up</a></li>
           </ul>
       </nav>
     <form class="box" action="index.html" method="post">
-      <h1>Enter Your Information</h1>
-      <input type="text" name="" placeholder="Gender" id="gender" />
-      <input type="number" name="" placeholder="Age" id="age" />
-      <input type="text" name="" placeholder="Subject" id="subject" />
-      <input type="text" name="" placeholder="Level" id="level" />
-      <input type="submit" name="" value="Submit" onclick="validate"/>
+     <ul>
+       <li><h1>Enter information</h1></li>
+       <li><div class="dropdown">
+        <div class="dropdown-select">
+          <span class="select">Search Courses*</span>
+          <i class="fa ra-caret-down"></i>
+        </div>
+        </div></li>
+       <li> <div class="dropdown">
+        <div class="dropdown-select">
+          <span class="select">Course*<Type></Type></span>
+          <i class="fa ra-caret-down"></i>
+        </div>
+          <div class="dropdown-list">
+            <div class="dropdown-list-items">Web Development</div>
+            <div class="dropdown-list-items">Graphic Design</div>
+            <div class="dropdown-list-items">Music</div>
+            <div class="dropdown-list-items">Business</div>
+            <div class="dropdown-list-items">Data Science</div>
+            <div class="dropdown-list-items">Computer Programming</div>
+          </div>
+        </div></li>
+       <li> <div class="dropdown">
+        <div class="dropdown-select">
+          <span class="select">Course Level*</span>
+          <i class="fa ra-caret-down"></i>
+        </div>
+          <div class="dropdown-list">
+            <div class="dropdown-list-items">Beginner Level</div>
+            <div class="dropdown-list-items">Intermediate Level</div>
+            <div class="dropdown-list-items">Expert Level</div>
+            <div class="dropdown-list-items">All Levels</div>
+          </div>
+        </div></li>
+        <li><input type="submit" name="" value="Submit" onclick="validate"></li>
+     </ul>
+     
+        
+      
     </form>
   </body>
 </html>
